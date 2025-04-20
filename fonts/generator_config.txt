@@ -1,0 +1,5 @@
+# Font Squirrel Font-face Generator Configuration File
+# Upload this file to the generator to recreate the settings
+# you used to create these fonts.
+
+{"mode":"expert","formats":["woff","woff2"],"tt_instructor":"default","fix_gasp":"xy","fix_vertical_metrics":"Y","metrics_ascent":"","metrics_descent":"","metrics_linegap":"","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"advanced","subset_range":["macroman","lowercase","uppercase","numbers","punctuation","currency","typographics","math","altpunctuation","accentedlower","accentedupper","diacriticals","english","ubasic","ulatin1","ucurrency","upunctuation"],"subset_custom":"","subset_custom_range":"U+20,U+21,U+22,U+24,U+25,U+26-29,U+2B-3A,U+3F-4A,U+4C,U+4D,U+4F-58,U+59,U+61-7A,U+A9,U+D7,U+F004,U+F00C,U+F017,U+F054,U+F058,U+F062,U+F07A,U+F095,U+F099,U+F09B,U+F0C0,U+F0E0,U+F0E1,U+F121,U+F135,U+F16D,U+F17D,U+F185,U+F186,U+F1B4,U+F1FC,U+F201,U+F39E,U+F3A5,U+F3C5,U+F3CD,U+201C","subset_ot_features":"all","subset_ot_features_list":"","base64":"Y","style_link":"Y","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}

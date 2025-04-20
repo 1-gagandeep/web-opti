@@ -1,0 +1,71 @@
+<svg width="60" height="60" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Spin the whole group on hover */
+    .logo-container {
+      transition: transform 1s ease;
+      transform-origin: center;
+    }
+
+    svg:hover .logo-container {
+      transform: rotate(360deg);
+    }
+
+    /* Animate brush stroke draw-in */
+    use {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: drawStroke 2s ease forwards;
+    }
+
+    @keyframes drawStroke {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    /* Fade and scale text */
+    text {
+      opacity: 0;
+      transform: scale(0.95);
+      transform-origin: center;
+      animation: fadeInText 1.2s ease 1s forwards;
+    }
+
+    @keyframes fadeInText {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <defs>
+    <!-- Gradient for artistic flair -->
+    <linearGradient id="creativeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6ec4; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7873f5; stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Brush stroke path -->
+    <path id="brushStroke" d="M30 160 C 70 60, 160 60, 190 150 S 260 230, 270 140" />
+  </defs>
+
+  <!-- Group all logo elements for spin -->
+  <g class="logo-container">
+    <!-- Circular background -->
+    <circle cx="150" cy="150" r="140" fill="white" stroke="url(#creativeGradient)" stroke-width="6" />
+
+    <!-- Animated brush stroke -->
+    <use href="#brushStroke" stroke="url(#creativeGradient)" stroke-width="10" fill="none" />
+
+    <!-- Animated logo text -->
+    <text x="150" y="200"
+          text-anchor="middle"
+          font-family="Georgia, serif"
+          font-size="24"
+          fill="url(#creativeGradient)"
+          font-weight="bold">
+      CreativeStudio
+    </text>
+  </g>
+</svg>
